@@ -1,0 +1,26 @@
+﻿<Page x:Class="AuthRegApp.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AuthRegApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthPage">
+
+    <Grid Background="White">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 5">
+                <TextBlock Margin="0 0 10 0">Логин</TextBlock>
+                <TextBox x:Name="LoginTb" Width="100"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 5">
+                <TextBlock Margin="0 0 10 0">Пароль</TextBlock>
+                <PasswordBox x:Name="PasswordPb" Width="100"></PasswordBox>
+            </StackPanel>
+            <Button Margin="0 10 0 0" x:Name="EnterBtn" Click="EnterBtn_Click">Вход</Button>
+            <TextBlock TextAlignment="Center" Margin="0 15 0 0">У вас еще нет аккаунта?</TextBlock>
+            <Button Margin="0 5 0 0" x:Name="GoToRegBtn" Click="GoToRegBtn_Click">Регистрация</Button>
+        </StackPanel>
+    </Grid>
+</Page>
